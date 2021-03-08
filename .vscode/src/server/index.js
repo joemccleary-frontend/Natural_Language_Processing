@@ -6,7 +6,7 @@ dotenv.config();
 
 var path = require('path')
 const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
+//const mockAPIResponse = require('./mockAPI.js')
 
 //Variables for API call
 let baseURL = 'https://api.meaningcloud.com/sentiment-2.1?key=';
