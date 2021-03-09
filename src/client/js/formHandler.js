@@ -1,17 +1,16 @@
 function handleSubmit(event) {
     event.preventDefault()
     
-    let formText = document.getElementById('url').value; 
+    let formText = document.getElementById('inputURL').value; 
    
-    
     // check what text was put into the form field
     if(Client.checkForName(formText)){
     
     //Fetch request
-fetch('http://localhost:8080/addData',{
+    fetch('http://localhost:8080/addData',{
         method: 'POST',
         credentials: 'same-origin',
-       mode: 'cors',
+        mode: 'cors',
         headers:{
             'Content-Type':'application/json',
         },
