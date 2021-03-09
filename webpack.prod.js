@@ -6,8 +6,6 @@ const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
-
-
 module.exports = {
     optimization: {
         minimizer: [new TerserPlugin({}),
@@ -41,7 +39,7 @@ module.exports = {
         }
         ]
     },
-    
+
     plugins: [
         new HtmlWebPackPlugin({
             template: "./.vscode/src/client/views/index.html",
@@ -50,8 +48,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css"
         }),
-        new WorkboxPlugin.GenerateSW()
-     
+        new WorkboxPlugin.GenerateSW()     
     ]
 }
-

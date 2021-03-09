@@ -6,8 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const loader = require('sass-loader')
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
-
-
 module.exports = {
     output: {
         libraryTarget:'var',
