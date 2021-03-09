@@ -15,7 +15,7 @@ module.exports = {
         libraryTarget:'var',
     library:'Client'
 },
-    entry: './.vscode/src/client/index.js',
+    entry: './src/client/index.js',
     mode: 'production',
     module: {
         rules: [
@@ -42,7 +42,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./.vscode/src/client/views/index.html",
+            template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin({
